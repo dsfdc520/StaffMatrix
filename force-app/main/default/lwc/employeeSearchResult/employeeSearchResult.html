@@ -1,0 +1,17 @@
+<template>
+    <lightning-layout multiple-rows horizontal-align="center">
+        <template if:true={employeesFound}>
+            <template for:each={employees} for:item="employee">
+                <lightning-layout-item key={employee.Id} padding="around-small" size="12" small-device-size="6"
+                    large-device-size="6" medium-device-size="6">
+                    {employee.Name}
+                </lightning-layout-item>
+            </template>
+        </template>
+        <template if:false={employeesFound}>
+            <div class="slds-align_absolute-center">
+                No Employees on this department
+            </div>
+        </template>
+    </lightning-layout>
+</template>

@@ -1,0 +1,11 @@
+<template>
+    <lightning-layout horizontal-align="center">
+        <lightning-layout-item padding="horizontal-small">
+            <lightning-combobox name="departments" label="Employee Department" placeholder="Technology" value={selectedValue} 
+            onchange={handleDepartmentChange} variant="label-hidden" options={Departments} ></lightning-combobox>
+        </lightning-layout-item>
+        <lightning-layout-item padding="horizontal-small">
+            <lightning-button label="New" onclick={createNewDepartment} ></lightning-button>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
