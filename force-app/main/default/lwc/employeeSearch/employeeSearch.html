@@ -1,0 +1,12 @@
+<template>
+    <div class="slds-m-bottom_small">
+        <lightning-card title="Search Your Car">
+            <c-employee-search-form ondepartmentselect={departmentSelectHandler}></c-employee-search-form>
+        </lightning-card>
+    </div>
+    <div class="slds-m-vertical_small">
+        <lightning-card title="Matching Employees">
+            <c-employee-search-result department-id={departmentId}></c-employee-search-result>
+        </lightning-card>
+    </div>
+</template>
